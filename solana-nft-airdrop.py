@@ -2,7 +2,7 @@ import subprocess
 import time
 
 #Read file for token addresses
-token_file = open(r'C:\Users\h\Documents\Freelance\Solana_Owls\testing\token_list_test.txt')
+token_file = open(r'token_list.txt')
 lines = token_file.readlines()
 token_file.close()
 
@@ -14,9 +14,10 @@ tip = ["solana", "transfer", "2tmH3Yj661FoRwfqFshw1jm4ocFdd2Q17aSAGU9JrMzK", "0.
 send_tip = subprocess.Popen(tip)
 
 #For the nth address we attempt to send token n
-with open(r'C:\Users\h\Documents\Freelance\Solana_Owls\testing\wallet_list_test.txt') as fp:
+with open(r'wallet_list.txt') as fp:
     for line in fp:
 
+        #Extract token and address values from files.
         token = lines[count]
         token = token.strip('\n')
    
