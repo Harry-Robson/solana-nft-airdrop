@@ -1,6 +1,8 @@
 import subprocess
 import time
 
+print("solana-nft-airdrop by Harry Robson © 2022")
+
 #Read file for token addresses
 token_file = open(r'token_list.txt')
 lines = token_file.readlines()
@@ -26,7 +28,7 @@ with open(r'wallet_list.txt') as fp:
 
         #Construct spl-token transfer command to send token from wallet to recipient
         cmd = ["spl-token", "transfer", token, "1", recipient, "--allow-unfunded-recipient", "--fund-recipient"]
-        
+
         send = subprocess.Popen(cmd)
         send.communicate()
       
@@ -35,7 +37,7 @@ with open(r'wallet_list.txt') as fp:
         if send.returncode != 0:
             print("ERROR sending token " + token + "to recipient: " + recipient)
         else:
-            #Add 1 to count to make more understandable to everyone using
+            #Add 1 to count to remove beginner confusion with index
             print("Airdrop #" + str(count + 1) + " Complete")
 
         #Increase the address line count
