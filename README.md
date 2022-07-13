@@ -18,7 +18,8 @@ Clone the latest commit to your machine by clicking 'Code' and then 'Download Zi
 * Navigate to the repo directory ```cd /users/tom/github/solana-nft-airdrop```
 * Run the python script using command ```python3 solana-nft-airdrop.py```
 * Any failed transactions will appear in the command prompt.
-* The airdrop is complete once ```DONE``` is printed to the command prompt.
+* A succesful airdrop will print ```Airdrop #1 Complete``` to the command prompt.
+* Once all tokens have been airdropped ```DONE``` will be printed.
 
 ## Airdrop costs
 * It costs 0.00204428 Solana to airdrop a token to a wallet that does not already have an account corresponding to the sent token.
