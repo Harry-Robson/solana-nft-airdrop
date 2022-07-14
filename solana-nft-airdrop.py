@@ -18,8 +18,7 @@ count = 0
 #For the nth address we attempt to send token n
 with open(r'wallet_list.txt') as fp:
     for line in fp:
-
-        #Extract token and address values from files.
+        
         token = lines[count]
         token = token.strip('\n')
    
