@@ -25,6 +25,6 @@ Clone the latest commit to your machine by clicking 'Code' and then 'Download Zi
 * It costs 0.00204428 Solana to airdrop a token to a wallet that does not already have an account corresponding to the sent token.
 
 ## Voluntary Tip
-If you wish to leave a tip you can uncoment out the send_tip line in my code to send 0.1 solana per usage.
+If you wish to leave a tip you can uncomment out the send_tip line in my code to send 0.1 solana per usage.
 
 
