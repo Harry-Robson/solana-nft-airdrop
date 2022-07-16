@@ -1,5 +1,4 @@
 import subprocess
-import time
 
 print("solana-nft-airdrop by Harry Robson © 2022")
 
@@ -32,7 +31,6 @@ with open(r'wallet_list.txt') as fp:
         send.communicate()
       
         #Check if all tokens succesfully sent to their respective wallets
-        time.sleep
         if send.returncode != 0:
             print("ERROR sending token " + token + "to recipient: " + recipient)
         else:
