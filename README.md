@@ -16,7 +16,7 @@ Clone the latest commit to your machine by clicking 'Code' and then 'Download Zi
 ## Usage
 * Open command prompt
 * Navigate to the repo directory ```cd /users/tom/github/solana-nft-airdrop```
-* Run the python script using command ```python3 solana-nft-airdrop.py```
+* Run the python script using command ```python solana-nft-airdrop.py```
 * Any failed transactions will appear in the command prompt.
 * A succesful airdrop will print ```Airdrop #1 Complete``` to the command prompt.
 * Once all tokens have been airdropped ```DONE``` will be printed.
